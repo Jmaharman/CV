@@ -1,0 +1,132 @@
+<!doctype html public "✰">
+<!--[if lt IE 7]> <html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title dir="ltr">John Harman - Website developer and enthusiast - CV</title>
+
+    <link rel="icon" href="Content/Images/Profile_16x16.png" >
+
+    <link rel="stylesheet" type="text/css" href="content/css/styles.css" />
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.3.0/less-1.3.0.min.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" type="text/css" href="content/css/linear.css" >
+    <link rel="stylesheet" media="print" type="text/css" href="content/css/linear.css" >
+
+    <script type="text/javascript" src="js/lib/modernizr-custom.min.js"></script>
+</head>
+<body>
+    <!--
+    Dear Sir / Madam,
+
+    Thank you for reading my C.V. and also taking the time to look at the source of the page. 
+    Hopefully you will like what you see and possibly agree with the reasons 
+    why I decided to create my C.V. in this format.
+
+    Firstly you get the opportunity to look through my code, and make 
+    your own judgements before you even talk to me.
+
+    Secondly, in my role at Avvio I was constantly looking through C.V.s and like
+    most people I found it tiring reading so much unecessary information 
+    for what was often a quick scan which I would then go into detail. 
+    So I've tried to make my C.V. as easy to scan as easily as possible so you can find
+    the information you are looking for.
+
+    Thanks for your time.
+
+    John
+
+    P.S. The site is built by generating the page using a mustache template running off 
+    XML data. The CSS is generated using LESS and I have also added some enhancements to
+    the page via Javascript to make your life easier. I have deliberately left the site 
+    unminified and uncompressed so that you could read it easily.
+
+    Updated: 19/04/2012
+    -->
+    <header id="synopsis">
+        <h1>{{name}} <span class="title">{{ title }}</span></h1>
+        <img src="Content/Images/Profile_128x128.png" alt="John Harman Profile" />
+        <p>
+            <span>Date of birth</span>: <strong>{{ birthDate }}</strong><br />
+            <span>Location</span>: <strong>{{ location }}</strong><br />
+            <span>Contact</span>: <strong>{{ contactDetails }}</strong><br />
+            <span class="downloadable-formats"><span>Downloadable CV</span>: <a href="John_Harman_CV.pdf"><strong>PDF</strong></a></div>
+        </p>
+        
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#myinterests">My Other Interests</a></li>
+        </ul>
+        {{{ mycv }}}
+    </header>
+    <div id="cv-content">
+        <a name="aboutme" id="aboutme"></a>
+        <h2>About me</h2>
+        <section id="bio">
+            <div class="cv-section">
+              {{{ aboutme.overview }}}
+            </div>
+            {{#aboutme.bio}}
+                <div class="cv-section">
+                    <article class="bio">
+                        <h3>{{ title }}</h3>
+                        <div class="bio-details">
+                        {{{ detail }}}
+                        </div>
+                    </article>
+                </div>
+            {{/aboutme.bio}}
+        </section>
+        
+        <a name="work" id="work"></name>
+        <section id="positions">
+            <h2>Work</h2>
+            {{#positions.position}}
+                <div class="cv-section">
+                    <article class="position">
+                        <h3>{{ title }} @ {{ companyName }}</h3>
+                        <p>Period: <strong>{{ period }}</strong></p>
+                        <div class="position-details">
+                        {{{ story }}}
+                        <div class="projects">
+                            {{#projects.project}}
+                                <article class="project">
+                                    <h5>{{ title }}</h5>
+                                    <ul class="core-skills">
+                                    {{#skills.skill}}
+                                        <li class="skill">{{ . }}</li>
+                                    {{/skills.skill}}
+                                    </ul>
+                                    <div class="description">
+                                        {{{ description }}}
+                                    </div>
+                                </article>
+                            {{/projects.project}}
+                        </div>
+                        </div>
+                    </article>
+                </div>
+            {{/positions.position}}
+        </section>
+        <section id="interests">
+            <a name="myinterests" id="myinterests"></name>
+            <h2>My other interests</h2>
+            
+            {{#interests.interest}}
+                <div class="cv-section">
+                    <h5>{{ name }}</h5>
+                    {{{ description }}}
+                </div>
+            {{/interests.interest}}
+        </section>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/underscore.min.js"></script>
+    <script type="text/javascript" src="js/lib/backbone.min.js"></script>
+    <script type="text/javascript" src="js/views/cvOverview.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>

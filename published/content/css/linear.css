@@ -1,0 +1,29 @@
+/* VARIABLES FOR LESS CSS */
+#synopsis {
+  width: auto;
+  background-color: #fff;
+  border: solid 1px #cccccc;
+  border-left: 0;
+  border-top: 0;
+  margin-bottom: 20px;
+  background-image: url(../Images/HeaderBG.png);
+  background-repeat: repeat-y;
+  background-position: -20px top;
+  padding: 10px 20px 10px 40px;
+  position: inherit;
+  text-align: left;
+}
+.cv-section {
+  width: auto;
+}
+#cv-content {
+  width: auto;
+  padding: 0;
+}
+#cv-content h2,
+#cv-content h3,
+#cv-content h4,
+#cv-content h5,
+#cv-content h6 {
+  width: auto;
+}

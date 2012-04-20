@@ -1,0 +1,3 @@
+Run generator.js with node and amend any of the less, templates or data and it will automatically update the published folder.
+
+To create a PDF use this tool online. http://pdfcrowd.com/ with the url http://cv.johnharman.co.uk/?generator which removes the Download CV link and about this CV text.

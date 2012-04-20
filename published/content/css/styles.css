@@ -1,0 +1,382 @@
+/* VARIABLES FOR LESS CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.4;
+  background-color: #F9F9F9;
+  font-family: Helvetica, Arial, Sans-Serif;
+  color: #666;
+  font-size: 14px;
+  background-image: url(../Images/LeftSideBG.png);
+  background-repeat: repeat-y;
+  background-position: -30px top;
+}
+ol,
+ul {
+  list-style: none;
+}
+abbr {
+  border-bottom: dotted 1px gray;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5a308d;
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+h1 span {
+  font-size: 14px;
+  display: block;
+}
+h2 {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+h3 {
+  font-size: 1.4em;
+  margin: 0 0 10px;
+}
+p {
+  padding: 0 0 5px 0;
+}
+strong,
+b {
+  font-weight: 900;
+}
+#cv-content {
+  padding-right: 300px;
+}
+#cv-content h2 {
+  width: 620px;
+  background-color: #fff;
+  border: solid 1px #cccccc;
+  border-left: 0;
+  border-top: 0;
+  margin-bottom: 20px;
+  background-image: url(../Images/HeaderBG.png);
+  background-repeat: repeat-y;
+  background-position: -20px top;
+  padding: 10px 20px 10px 40px;
+}
+.cv-section {
+  width: 610px;
+  background-color: #fff;
+  border: solid 1px #cccccc;
+  border-left: 0;
+  border-top: 0;
+  margin-bottom: 20px;
+  background-image: url(../Images/HeaderBG.png);
+  background-repeat: repeat-y;
+  background-position: -20px top;
+  padding: 10px 20px 10px 50px;
+  background-position: -10px top;
+}
+.cv-section ol,
+.cv-section ul {
+  list-style: disc;
+  margin: 0 25px 10px;
+}
+.cv-section ol {
+  list-style-type: decimal;
+}
+.cv-section li {
+  margin-bottom: 2px;
+}
+#positions h2 {
+  background-image: url(../Images/GreenBG.png);
+  color: #8abd50;
+}
+#positions .cv-section {
+  background-image: url(../Images/GreenBG.png);
+}
+#positions .cv-section h2 {
+  background-image: url(../Images/GreenBG.png);
+  color: #8abd50;
+}
+#positions .cv-section h3,
+#positions .cv-section h4,
+#positions .cv-section h5 {
+  color: #8abd50;
+}
+#interests .cv-section,
+#interests h2 {
+  background-image: url(../Images/PinkBG.png);
+}
+#interests h2,
+#interests .cv-section h3,
+#interests .cv-section h4,
+#interests .cv-section h5 {
+  color: #bb225a;
+}
+.bio h3 {
+  margin-bottom: 5px;
+}
+#bio .maximized h3 {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 20px;
+  background-image: url(../images/expandable-icons.png);
+  background-position: -10px -3px;
+}
+#bio .minified h3 {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 20px;
+  background-image: url(../images/expandable-icons.png);
+  background-position: -10px -35px;
+}
+#bio .minified .bio-details {
+  display: none;
+}
+#iam,
+#ican {
+  float: left;
+  width: 40%;
+  line-height: 1.3;
+}
+.clear {
+  clear: both;
+}
+#iam h4,
+#ican h4 {
+  padding-left: 12px;
+  margin-bottom: 5px;
+}
+#ican {
+  width: 59%;
+}
+.position h3 {
+  margin-bottom: 5px;
+}
+#positions .maximized h3 {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 20px;
+  background-image: url(../images/expandable-icons.png);
+  background-position: -10px -67px;
+}
+#positions .minified h3 {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 20px;
+  background-image: url(../images/expandable-icons.png);
+  background-position: -10px -99px;
+}
+#positions .minified .position-details {
+  display: none;
+}
+.project {
+  background-image: url(../Images/GreenBG.png);
+  background-repeat: repeat-y;
+  position: relative;
+  left: -50px;
+  padding: 5px 20px 0px 60px;
+  margin-bottom: 10px;
+}
+.project h5 {
+  margin-bottom: 3px;
+}
+.project .description {
+  clear: left;
+  margin-top: 6px;
+}
+.project ul.core-skills {
+  margin: 0;
+}
+.project .core-skills li.skill {
+  background-color: #ebebeb;
+  margin-left: 3px;
+  display: inline-block;
+}
+.projects .maximized h5 {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 20px;
+  background-image: url(../images/expandable-icons.png);
+  background-position: -10px -69px;
+}
+.projects .minified h5 {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  padding-left: 20px;
+  background-image: url(../images/expandable-icons.png);
+  background-position: -10px -102px;
+}
+.projects .minified .description {
+  display: none;
+}
+#synopsis {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px 25px 25px;
+  text-align: right;
+  background-color: #fff;
+  border-left: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+}
+#synopsis img {
+  display: inline;
+  border: solid 1px #cccccc;
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#synopsis p {
+  padding-top: 10px;
+}
+#synopsis ul {
+  margin-top: 10px;
+}
+#synopsis li:first-child a {
+  color: #5a308d;
+}
+#synopsis li a {
+  color: #8abd50;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#synopsis li:last-child a {
+  color: #bb225a;
+}
+.lt-ie7 #synopsis {
+  position: absolute;
+}
+body.generator .downloadable-formats,
+body.generator .about-cv {
+  display: none;
+}
