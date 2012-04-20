@@ -1,11 +1,10 @@
-<!doctype html public "✰">
+<!doctype html>
 <!--[if lt IE 7]> <html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html lang="en-us" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html lang="en-us" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title dir="ltr">John Harman - Website developer and enthusiast - CV</title>
 
     <link rel="icon" href="Content/Images/Profile_16x16.png" >
@@ -54,7 +53,7 @@
             <span>Date of birth</span>: <strong>{{ birthDate }}</strong><br />
             <span>Location</span>: <strong>{{ location }}</strong><br />
             <span>Contact</span>: <strong>{{ contactDetails }}</strong><br />
-            <span class="downloadable-formats"><span>Downloadable CV</span>: <a href="John_Harman_CV.pdf"><strong>PDF</strong></a></div>
+            <span class="downloadable-formats"><span>Downloadable CV</span>: <a href="John_Harman_CV.pdf"><strong>PDF</strong></a></span>
         </p>
         
         <ul>
@@ -65,7 +64,7 @@
         {{{ mycv }}}
     </header>
     <div id="cv-content">
-        <a name="aboutme" id="aboutme"></a>
+        <a id="aboutme"></a>
         <h2>About me</h2>
         <section id="bio">
             <div class="cv-section">
@@ -83,7 +82,7 @@
             {{/aboutme.bio}}
         </section>
         
-        <a name="work" id="work"></name>
+        <a id="work"></a>
         <section id="positions">
             <h2>Work</h2>
             {{#positions.position}}
@@ -114,7 +113,7 @@
             {{/positions.position}}
         </section>
         <section id="interests">
-            <a name="myinterests" id="myinterests"></name>
+            <a id="myinterests"></a>
             <h2>My other interests</h2>
             
             {{#interests.interest}}
