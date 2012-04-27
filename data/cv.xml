@@ -87,11 +87,14 @@
           </bio>
        </aboutme>
        <mycv>
-         <![CDATA[
-         <p class="about-cv">
-            <strong>C.V. Layout</strong>: Read the page and simply expand or collapse areas that interest you.
-            This will help you pin-point the information you're interested in.
-        </p>
+          <![CDATA[
+          <p class="about-cv">
+            <strong>C.V. Layout</strong>: Scan the page to find what interests you, then simply expand those areas to read more.
+          </p>
+          <p>
+            If you've noticed a web of information between this box and the main content then <strong>you're clever enough</strong> to be using a modern browser. Click in that area 
+            to view the content in full. Otherwise, shame on you!
+          </p>
          ]]>
        </mycv>
         <positions>
@@ -113,24 +116,24 @@
                                 <li>Deliver the product to testing and complete all bug fixes</li>
                             </ul>]]></description>
                         <skills>
-                            <skill>ASP.NET MVC3</skill>
-                            <skill>SQL Server 2008</skill>
-                            <skill>Javascript</skill>
-                            <skill>Backbone</skill>
-                            <skill>CSS</skill>
-                            <skill>HTML5</skill>
+                            <skill area=".NET" name="ASP.NET MVC3" />
+                            <skill area="SQL Server" name="SQL Server 2008" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="Javascript" name="Backbone" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="HTML5" />
                         </skills>
                     </project>
                     <project>
                         <title>Career Progression Tool</title>
                         <description><![CDATA[<p>This tool is an internal site which helps staff create goals for their career progression. It does this by allowing them to create and review goals on a quarterly basis, this review process is done remotely with the manager via the site. I was asked to create the backend administration for the tool so that dreamm could administer the options available.</p>]]></description>
                         <skills>
-                            <skill>ASP.NET MVC3</skill>
-                            <skill>SQL Server 2008</skill>
-                            <skill>Javascript</skill>
-                            <skill>Backbone</skill>
-                            <skill>CSS</skill>
-                            <skill>HTML5</skill>
+                            <skill area=".NET" name="ASP.NET MVC3" />
+                            <skill area="SQL Server" name="SQL Server 2008" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="Javascript" name="Backbone" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="HTML5" />
                         </skills>
                     </project>
                     <project>
@@ -139,11 +142,11 @@
                             in three days. The website was very simple in structure and layout, which made the task achievable. However the site is still not live due to the guys at dreamm still
                             being too busy with client work to finalise content and launch it. Watch this space.</p>]]></description>
                         <skills>
-                            <skill>ASP.NET MVC3</skill>
-                            <skill>SQL Server 2008</skill>
-                            <skill>Javascript</skill>
-                            <skill>CSS</skill>
-                            <skill>HTML5</skill>
+                            <skill area=".NET" name="ASP.NET MVC3" />
+                            <skill area="SQL Server" name="SQL Server 2008" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="HTML5" />
                         </skills>
                     </project>
                 </projects>
@@ -178,11 +181,11 @@
                             on time and is in production as we speak.</p>
                             ]]></description>
                         <skills>
-                            <skill>ASP.NET C#</skill>
-                            <skill>protobuf-net</skill>
-                            <skill>NHibernate</skill>
-                            <skill>Communication</skill>
-                            <skill>Client facing</skill>
+                            <skill area=".NET" name="ASP.NET C#" />
+                            <skill area=".NET" name="protobuf-net" />
+                            <skill area=".NET" name="NHibernate" />
+                            <skill area="Personal" name="Communication" />
+                            <skill area="Personal" name="Client facing" />
                         </skills>
                     </project>
                 </projects>
@@ -201,9 +204,9 @@
                             their own functionality and interactions while giving them the basics of simple page transitions.
                         </p>]]></description>
                         <skills>
-                            <skill>Javascript</skill>
-                            <skill>HTML5</skill>
-                            <skill>CSS</skill>
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="HTML" name="HTML5" />
+                            <skill area="CSS" name="CSS" />
                         </skills>
                     </project>
                     <project>
@@ -212,9 +215,9 @@
                          <p>ASP.NET MVC 3 was used as the backend to manage screens and save changes to disk, other features were added including the ability to see the difference
                             between two saved versions of the same screen.</p>]]></description>
                         <skills>
-                            <skill>Javascript</skill>
-                            <skill>HTML5</skill>
-                            <skill>ASP.NET MVC 3</skill>
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="HTML" name="HTML5" />
+                            <skill area=".NET" name="ASP.NET MVC 3" />
                         </skills>
                     </project>
                     <project>
@@ -223,10 +226,10 @@
                             Students would go through a step by step guide asking for input of study points required and their commitments such as work, leisure, sleep. Once all
                             steps had been completed the user was informed if they had enough study time booked in or if it need to be adjusted. If the study time was correct it then analyzed their plan and if necessary would suggest other tips to help them, e.g. splitting up study blocks if study sessions were too long.</p>]]></description>
                         <skills>
-                            <skill>Javascript</skill>
-                            <skill>Backbone</skill>
-                            <skill>CSS</skill>
-                            <skill>XHTML</skill>
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="Javascript" name="Backbone" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="XHTML" />
                         </skills>
                     </project>
                 </projects>
@@ -262,9 +265,9 @@
                         rather than put them up.
                         </p>]]></description>
                         <skills>
-                            <skill>Management</skill>
-                            <skill>Communication</skill>
-                            <skill>Recruitment</skill>
+                            <skill area="Personal" name="Management" />
+                            <skill area="Personal" name="Communication" />
+                            <skill area="Personal" name="Recruitment" />
                         </skills>
                     </project>
                     <project>
@@ -276,9 +279,9 @@
                         <p>Additionally, as part of this role I would also try to build up a relationship with their internal technical teams. I found this made
                         a massive difference in ease of delivery for the project and I would recommend it for any third-party.</p>]]></description>
                         <skills>
-                            <skill>Client facing</skill>
-                            <skill>Communication</skill>
-                            <skill>Pitching</skill>
+                            <skill area="Personal" name="Client facing" />
+                            <skill area="Personal" name="Communication" />
+                            <skill area="Personal" name="Pitching" />
                         </skills>
                     </project>
                     <project>
@@ -290,9 +293,9 @@
                         i.e. freelancers in specific fields
                         I could then make sure that any possible jobs that came in could be dealt with in confidence, from pitch through to delivery.</p>]]></description>
                         <skills>
-                            <skill>Communication</skill>
-                            <skill>Forward thinking</skill>
-                            <skill>Recruitment</skill>
+                            <skill area="Personal" name="Communication" />
+                            <skill area="Personal" name="Forward thinking" />
+                            <skill area="Personal" name="Recruitment" />
                         </skills>
                     </project>
                 </projects>
@@ -329,15 +332,15 @@
                         </p>
                         ]]></description>
                         <skills>
-                            <skill>.NET 2.0 - 3.5</skill>
-                            <skill>SQL Server 2000 - 2008</skill>
-                            <skill>NHibernate</skill>
-                            <skill>NUnit</skill>
-                            <skill>Elmah</skill>
-                            <skill>Lucene.NET</skill>
-                            <skill>XHTML</skill>
-                            <skill>CSS</skill>
-                            <skill>Javascript (including jQuery)</skill>
+                            <skill area=".NET" name=".NET 2.0 - 3.5" />
+                            <skill area="SQL Server" name="SQL Server 2005" />
+                            <skill area=".NET" name="NHibernate" />
+                            <skill area=".NET" name="NUnit" />
+                            <skill area=".NET" name="Elmah" />
+                            <skill area=".NET" name="Lucene.NET" />
+                            <skill area="HTML" name="XHTML" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="Javascript" name="Javascript" />
                         </skills>
                     </project>
                     <project>
@@ -379,12 +382,12 @@
                         </ol>
                         ]]></description>
                         <skills>
-                            <skill>.NET 2.0 - 3.5</skill>
-                            <skill>SQL Server 2000</skill>
-                            <skill>XHTML</skill>
-                            <skill>CSS</skill>
-                            <skill>Javascript</skill>
-                            <skill>Relationship building</skill>
+                            <skill area=".NET" name=".NET 2.0 - 3.5" />
+                            <skill area="SQL Server" name="SQL Server 2000" />
+                            <skill area="HTML" name="XHTML" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area="Personal" name="Relationship building" />
                         </skills>
                     </project>
                     <project>
@@ -404,8 +407,8 @@
                             this also had the bonus that contractors didn't need to be shown how to deploy to our test servers.
                         </p>]]></description>
                         <skills>
-                            <skill>Decision making</skill>
-                            <skill>Analysis</skill>
+                            <skill area="Personal" name="Decision making" />
+                            <skill area="Personal" name="Analysis" />
                         </skills>
                     </project>
                     <project>
@@ -424,8 +427,8 @@
                         </ul>
                         ]]></description>
                         <skills>
-                            <skill>Hardware knowledge</skill>
-                            <skill>Decision making</skill>
+                            <skill area="Technical Architecture" name="Hardware knowledge" />
+                            <skill area="Project Management" name="Decision making" />
                         </skills>
                     </project>
                 </projects>
@@ -453,9 +456,9 @@
                         their learning I created a very small example application that they
                         could refer to during their development.</p>]]></description>
                         <skills>
-                            <skill>Teaching</skill>
-                            <skill>Communication</skill>
-                            <skill>.NET 2.0</skill>
+                            <skill area="Personal" name="Teaching" />
+                            <skill area="Personal" name="Communication" />
+                            <skill area=".NET" name=".NET 2.0" />
                         </skills>
                     </project>
                     <project>
@@ -474,11 +477,11 @@
                         </p>
                         ]]></description>
                         <skills>
-                            <skill>XHTML</skill>
-                            <skill>CSS</skill>
-                            <skill>Javascript</skill>
-                            <skill>.NET 2.0</skill>
-                            <skill>MS SQL Server 2005</skill>
+                            <skill area="HTML" name="XHTML" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area=".NET" name=".NET 2.0" />
+                            <skill area="SQL Server" name="SQL Server 2005" />
                         </skills>
                     </project>
                 </projects>
@@ -502,11 +505,11 @@
                         quickly moved onto other tasks that needed doing, such as fixing bugs on already existing administrative pages,
                         creating new features such as an audit trail, and adding polls to the site</p>]]></description>
                         <skills>
-                            <skill>XHTML</skill>
-                            <skill>CSS</skill>
-                            <skill>Javascript</skill>
-                            <skill>.NET 2.0</skill>
-                            <skill>MS SQL Server 2000</skill>
+                            <skill area="HTML" name="XHTML" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area=".NET" name=".NET 2.0" />
+                            <skill area="SQL Server" name="SQL Server 2000" />
                         </skills>
                     </project>
                 </projects>
@@ -534,11 +537,11 @@
                         output much cleaner HTML using some MVC framework and I would use Lucene.NET
                         to create the search feature.</p>]]></description>
                         <skills>
-                            <skill>XHTML</skill>
-                            <skill>CSS</skill>
-                            <skill>Javascript</skill>
-                            <skill>.NET 2.0</skill>
-                            <skill>MS SQL Server 2000</skill>
+                            <skill area="HTML" name="XHTML" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area=".NET" name=".NET 2.0" />
+                            <skill area="SQL Server" name="SQL Server 2000" />
                         </skills>
                     </project>
                 </projects>
@@ -578,13 +581,13 @@
                             zero front end updates and as far as I know everything still renders well in all browsers.
                         </p>]]></description>
                         <skills>
-                            <skill>Planning</skill>
-                            <skill>Client facing</skill>                        
-                            <skill>HTML</skill>
-                            <skill>CSS</skill>
-                            <skill>Javascript</skill>
-                            <skill>.NET 2.0</skill>
-                            <skill>MS SQL Server 2005</skill>
+                            <skill area="Project Management" name="Planning" />
+                            <skill area="Personal" name="Client facing" />                        
+                            <skill area="HTML" name="HTML" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="Javascript" name="Javascript" />
+                            <skill area=".NET" name=".NET 2.0" />
+                            <skill area="SQL Server" name="SQL Server 2005" />
                         </skills>
                     </project>
                 </projects>
@@ -620,9 +623,9 @@
                         This system worked so well that it was only replaced in 2010.</p>
                         ]]></description>
                         <skills>
-                            <skill>SEO</skill>
-                            <skill>ASP</skill>
-                            <skill>MS SQL Server 2000</skill>
+                            <skill area="SEO" name="SEO" />
+                            <skill area="ASP" name="ASP" />
+                            <skill area="SQL Server" name="SQL Server 2000" />
                         </skills>
                     </project>
                 </projects>

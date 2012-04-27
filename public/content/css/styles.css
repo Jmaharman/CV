@@ -170,10 +170,12 @@ b {
   font-weight: 900;
 }
 #cv-content {
-  padding-right: 300px;
+  width: 690px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
 }
 #cv-content h2 {
-  width: 620px;
   background-color: #fff;
   border: solid 1px #cccccc;
   border-left: 0;
@@ -185,7 +187,6 @@ b {
   padding: 10px 20px 10px 40px;
 }
 .cv-section {
-  width: 610px;
   background-color: #fff;
   border: solid 1px #cccccc;
   border-left: 0;
@@ -310,10 +311,10 @@ b {
   clear: left;
   margin-top: 6px;
 }
-.project ul.core-skills {
+ul.core-skills {
   margin: 0;
 }
-.project .core-skills li.skill {
+.core-skills li {
   background-color: #ebebeb;
   margin-left: 3px;
   display: inline-block;
@@ -340,6 +341,7 @@ b {
 #synopsis {
   width: 250px;
   position: fixed;
+  z-index: 3;
   top: 0;
   right: 0;
   padding: 20px 25px 25px;
@@ -380,3 +382,68 @@ body.generator .downloadable-formats,
 body.generator .about-cv {
   display: none;
 }
+/* SKILL GRAPH SPECIFIC STYLES */
+#skill-graph {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  #skill-graph {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inherit;
+    z-index: 1;
+    opacity: 0.2;
+    -moz-opacity: 0.2;
+  }
+  #skill-graph:hover {
+    opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  #skill-graph .introduction {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    width: 300px;
+    left: -300px;
+    position: absolute;
+    z-index: 5;
+  }
+  #cv-content,
+  #synopsis {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  /* When the skill graph gets focus move all the relevant items in and out of the screen */
+  body.skill-graph-focus #cv-content {
+    left: -690px;
+  }
+  body.skill-graph-focus #synopsis {
+    right: -300px;
+  }
+  body.skill-graph-focus #skill-graph {
+    opacity: 100;
+    /* using opacity 100 because it fixes a disappearance bug in IE9, should be 1 really, */
+  
+    -moz-opacity: 1;
+  }
+  body.skill-graph-focus #skill-graph .introduction {
+    visibility: visible;
+    left: 0;
+  }
+  body.skill-graph-focus #skill-graph .back-to-cv {
+    display: block;
+    background: transparent url(../images/back-arrow.png) no-repeat 0 4px;
+    margin: 10px 0 0;
+    padding: 0 0 0 30px;
+    font-size: 20px;
+    color: #5a308d;
+  }
+}
+/* END */

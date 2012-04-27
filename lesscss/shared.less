@@ -5,9 +5,9 @@
 @work-colour: #8abd50;
 @interests-colour: #bb225a;
 @skill-background-colour: #ebebeb;
+@cv-area-width: 690px;
 
 .padding-box(@width) {
-	width: @width;
     background-color: #fff;
     border: solid 1px @border-colour;
     border-left: 0;
@@ -16,4 +16,12 @@
     background-image: url(../Images/HeaderBG.png);
     background-repeat: repeat-y;
     background-position: -20px top;
+}
+
+.transition(@speed){
+  -webkit-transition: all @speed ease-in-out;
+  -moz-transition: all @speed ease-in-out;
+  -o-transition: all @speed ease-in-out;
+  -ms-transition: all @speed ease-in-out;
+  transition: all @speed ease-in-out;
 }

@@ -6,8 +6,17 @@ var fs = require('fs'),
     xml2js = require('xml2js'),
     less = require('less'),
     _ = require("underscore"),
-    johnharman = {};
+    johnharman = {},
+    util = require('util'),
+    express = require('express'),
+    port = 444;
 
+// Create a web server to load the content via.
+express.createServer(express.static(__dirname + '/public')).listen(port);
+util.puts('Listening on ' + port + '...');
+util.puts('Press Ctrl + C to stop.');
+
+// Now setup the engine which generates the templates and css.
 johnharman.engine = function () {
 	this.initialize(arguments);
 };
@@ -38,7 +47,7 @@ _.extend(johnharman.engine.prototype, {
 			process.exit(1);
 		}
 
-		var parser = new xml2js.Parser();
+		var parser = new xml2js.Parser({mergeAttrs: true});
 
 		parser.parseString(data, this.loadTemplate);
 	},
@@ -50,6 +59,7 @@ _.extend(johnharman.engine.prototype, {
 		}
 
 		this.parsedXml = data;
+		console.log(util.inspect(data, false, null));
 
 		fs.readFile( 'templates/index.html', 'ascii', this.generateTemplate);
 	},
@@ -64,7 +74,7 @@ _.extend(johnharman.engine.prototype, {
 
 		html = mustache.to_html(data.toString('ascii'), this.parsedXml);
 
-		this.saveFile('published/index.html', html, "Template saved in published/index.html");
+		this.saveFile('public/index.html', html, "Template saved in public/index.html");
 	},
 
 	saveFile: function( file, contents, message ) {
@@ -99,7 +109,7 @@ _.extend(johnharman.engine.prototype, {
 				console.error("Parser error: %s", err);
 				process.exit(1);
 		}
-		this.saveFile('published/content/css/' + file + '.css', css, 'Less CSS Generated for ' + file);
+		this.saveFile('public/content/css/' + file + '.css', css, 'Less CSS Generated for ' + file);
 	}
 });
 

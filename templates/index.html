@@ -14,37 +14,45 @@
     <link rel="stylesheet" media="screen and (max-width: 1000px)" type="text/css" href="content/css/linear.css" >
     <link rel="stylesheet" media="print" type="text/css" href="content/css/linear.css" >
 
-    <script type="text/javascript" src="js/lib/modernizr-custom.min.js"></script>
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
 </head>
 <body>
     <!--
-    Dear Sir / Madam,
+    Thank you for reading my C.V. and also taking the time to look at the source code. 
+    
+    The reason I made my primary CV online was because I felt writing a CV in word 
+    was dull for both me and my readers, so why not harness my skills to make
+    it more interesting and usable.
 
-    Thank you for reading my C.V. and also taking the time to look at the source of the page. 
-    Hopefully you will like what you see and possibly agree with the reasons 
-    why I decided to create my C.V. in this format.
+    One of my main objectives was to make the CV as easily scannable as possible. I came
+    to that decision because I always found monumental word CVs too time consuming to read
+    through properly. I would always start skimming a CV and then move into more
+    detail if I found them to be worthwhile. So I've tried to make that task easier for you.
 
-    Firstly you get the opportunity to look through my code, and make 
-    your own judgements before you even talk to me.
-
-    Secondly, in my role at Avvio I was constantly looking through C.V.s and like
-    most people I found it tiring reading so much unecessary information 
-    for what was often a quick scan which I would then go into detail. 
-    So I've tried to make my C.V. as easy to scan as easily as possible so you can find
-    the information you are looking for.
+    I intend to add features over time so that we use the power of the web 
+    to make things even easier, such as a skill filter. See == History == for update nodes.
 
     Thanks for your time.
 
     John
 
-    P.S. The site is built by generating the page using a mustache and XML data. 
-    The CSS is generated using LESS and I have also added some enhancements to
-    the page via Javascript to make your life easier as you browse the page. 
-    I have deliberately left the site unminified and uncompressed so that you could read it easily.
-    However to view my original CSS you should check my repo with my cv: https://github.com/Jmaharman/CV 
-    basically I don't agree like the way LESS puts each selector on its own line.
+    P.S. For a more detailed description of how this page is generated using Node.Js and Less please visit
+    https://github.com/Jmaharman/CV
 
-    Updated: 19/04/2012
+    == History ==
+
+    27/04/2012: I've recently added a more visual representation of myself, hopefully this will be the first
+    step in making a more intuitive way of browsing my CV. The graph is an enhancement that's only visible
+    on modern browsers that support Canvas. I have no requirement to support older browsers as I think the types
+    of clients I wish to work for would be using the best browsers available.
+
+    19/04/2012: Re-created my CV so that it was generated via Node.js and Mustache as well as using Less. 
+
+    April 2011: Originally created my online CV in KnockoutJS as a tester for learning the technology. I actually found
+    I didn't like using it because it tried to do too much. In the end I used it to generate an HTML page from XML in Javascript
+    but then had to save it to another HTML file so that search engines could find it. I was not happy with the state of my CV but had
+    no time to improve it any further at the time.
+
     -->
     <header id="synopsis">
         <h1>{{name}} <span class="title">{{ title }}</span></h1>
@@ -98,7 +106,7 @@
                                     <h5>{{ title }}</h5>
                                     <ul class="core-skills">
                                     {{#skills.skill}}
-                                        <li class="skill">{{ . }}</li>
+                                        <li data-skill-area="{{ area }}">{{ name }}</li>
                                     {{/skills.skill}}
                                     </ul>
                                     <div class="description">
@@ -124,11 +132,6 @@
             {{/interests.interest}}
         </section>
     </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lib/underscore.min.js"></script>
-    <script type="text/javascript" src="js/lib/backbone.min.js"></script>
-    <script type="text/javascript" src="js/views/cvOverview.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-1385081-10']);

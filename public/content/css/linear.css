@@ -1,6 +1,5 @@
 /* VARIABLES FOR LESS CSS */
 #synopsis {
-  width: auto;
   background-color: #fff;
   border: solid 1px #cccccc;
   border-left: 0;
@@ -12,13 +11,10 @@
   padding: 10px 20px 10px 40px;
   position: inherit;
   text-align: left;
-}
-.cv-section {
   width: auto;
 }
 #cv-content {
   width: auto;
-  padding: 0;
 }
 #cv-content h2,
 #cv-content h3,

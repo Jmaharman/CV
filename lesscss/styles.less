@@ -118,7 +118,10 @@ strong, b {
 }
 
 #cv-content {
-  padding-right: 300px;
+  width: @cv-area-width;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
 
   h2 {
     .padding-box(@section-width);
@@ -252,17 +255,17 @@ strong, b {
     clear: left;
     margin-top: 6px;
   }
+}
 
-  ul.core-skills {
-    margin: 0;
-  }
+ul.core-skills {
+  margin: 0;
+}
 
-  .core-skills li.skill
-  {
-    background-color: #ebebeb;
-    margin-left: 3px;
-    display: inline-block;
-  }
+.core-skills li
+{
+  background-color: #ebebeb;
+  margin-left: 3px;
+  display: inline-block;
 }
 
 .projects {
@@ -284,6 +287,7 @@ strong, b {
 #synopsis {
   width: 250px;
   position: fixed;
+  z-index: 3;
   top: 0;
   right: 0;
   padding: 20px 25px 25px;
@@ -330,3 +334,71 @@ body.generator {
     display: none;
   }
 }
+
+/* SKILL GRAPH SPECIFIC STYLES */
+
+#skill-graph {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  #skill-graph {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inherit;
+    z-index: 1;
+    opacity: 0.2;
+    -moz-opacity: 0.2;
+
+    &:hover {
+      opacity: 0.4;
+      -moz-opacity: 0.4;
+    }
+
+    .introduction {
+      .transition(0.5s);
+      visibility: hidden;
+      width: 300px;
+      left: -300px;
+      position: absolute;
+      z-index: 5;
+    }
+  }
+
+  #cv-content, #synopsis {
+    .transition(.5s);
+  }
+
+  /* When the skill graph gets focus move all the relevant items in and out of the screen */
+  body.skill-graph-focus {
+    #cv-content {
+      left: -@cv-area-width;
+    }
+
+    #synopsis {
+      right: -300px;
+    }
+
+    #skill-graph {
+      opacity: 100; /* using opacity 100 because it fixes a disappearance bug in IE9, should be 1 really, */
+      -moz-opacity: 1;
+
+      .introduction {
+        visibility: visible;
+        left: 0;
+      }
+
+      .back-to-cv {
+        display: block;
+        background: transparent url(../images/back-arrow.png) no-repeat 0 4px;
+        margin: 10px 0 0;
+        padding: 0 0 0 30px;
+        font-size: 20px;
+        color: @about-me-colour;
+      }
+    }
+  }
+}
+
+/* END */

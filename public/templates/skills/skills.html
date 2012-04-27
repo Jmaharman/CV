@@ -1,0 +1,16 @@
+<div class="cv-section skill-list">
+  <h3>Filter by skill</h3>
+  <p>Click tags below to filter previous work by skills you are interested in.</p>
+  <ul class="core-skills">
+  	{{#skillareas}}
+  		<li class="group">
+  			{{name}}
+  			<ul>
+  			  {{#skills}}
+				<li>{{{ . }}}</li>
+  			  {{/skills}}
+			</ul>
+		</li>
+  	{{/skillareas}}
+  </ul>
+</div>
