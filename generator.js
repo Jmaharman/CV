@@ -59,7 +59,6 @@ _.extend(johnharman.engine.prototype, {
 		}
 
 		this.parsedXml = data;
-		console.log(util.inspect(data, false, null));
 
 		fs.readFile( 'templates/index.html', 'ascii', this.generateTemplate);
 	},
