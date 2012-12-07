@@ -9,10 +9,13 @@ var fs = require('fs'),
     johnharman = {},
     util = require('util'),
     express = require('express'),
-    port = 444;
+    port = 1337;
 
 // Create a web server to load the content via.
-express.createServer(express.static(__dirname + '/public')).listen(port);
+var app = express();
+app.use(express.static(__dirname + '/public'));
+app.listen(port);
+
 util.puts('Listening on ' + port + '...');
 util.puts('Press Ctrl + C to stop.');
 
@@ -25,8 +28,8 @@ johnharman.engine = function () {
 _.extend(johnharman.engine.prototype, {
 	initialize: function() {
 		// Found these functions were called more than once from the watch, so throttling them slightly.
-		this.generateLessCss = _.throttle(this.generateLessCss, 5000);
-		this.createCV = _.throttle(this.createCV, 5000);
+		this.generateLessCss = _.debounce(this.generateLessCss, 1000);
+		this.createCV = _.debounce(this.createCV, 1000);
 		// Ensure all functions have the context of "this" assigned to an instance of my engine class.
 		_.bindAll(this, 'generateLessCss', 'createCV', 'loadData', 'parseXml', 'loadTemplate', 'generateTemplate', 'parseLessCss', 'saveLessCss');
 	},
@@ -47,7 +50,7 @@ _.extend(johnharman.engine.prototype, {
 			process.exit(1);
 		}
 
-		var parser = new xml2js.Parser({mergeAttrs: true});
+		var parser = new xml2js.Parser({mergeAttrs: true, explicitArray: false, explicitRoot: false});
 
 		parser.parseString(data, this.loadTemplate);
 	},
@@ -69,8 +72,8 @@ _.extend(johnharman.engine.prototype, {
 			console.error("Could not open file: %s", err);
 			process.exit(1);
 		}
-		// Use toString on the buffer
 
+		// Use toString on the buffer
 		html = mustache.to_html(data.toString('ascii'), this.parsedXml);
 
 		this.saveFile('public/index.html', html, "Template saved in public/index.html");
