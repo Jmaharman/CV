@@ -16,9 +16,12 @@
                   which is when I taught myself HTML, Javascript and PHP.
               </p>
               <p>
-                A lot has changed since then, I've now got over 8 years of experience in website development, working on both backend and frontend in 
+                A lot has changed since then, I've now got over 9 years of experience in website development, working on both backend and frontend in 
                 numerous platforms and technologies. Along with that experience you get a very passionate and personable developer who believes strongly
                 that good communication is the key to success.
+              </p>
+              <p>
+                My more recent aim has been to become a programmer who is ubiquitous in whatever platform / technology available. There are obviously restrictions to what one man can do but I believe the more I know about other systems and other languages the better a programmer I become.
               </p>
             ]]>
          </overview>
@@ -56,32 +59,27 @@
             </detail>
           </bio>
           <bio>
-            <title>Short comings</title>
+            <title>Tools of choice</title>
             <detail>
               <![CDATA[
-                <p>
-                  The things that I mention below are all areas or skills that I believe are important in what I do but I feel I'm weaker than I want to be.
-                  I'm working on improving them all the time though:
-                </p>
+                <p>Recently I've really enjoyed using the following tools during the development process.</p>
                 <ul>
-                    <li>Git - although I use it on my own personal projects I haven't had the opportunity to use it in the work place, which I think will help improve my understanding and usage of it.</li>
-                    <li>TDD - I've never used it in any workplace, I've done it myself at home but feel that I need a working environment to really embed this in my head</li>
-                    <li>Unit testing javascript - I'm currently trying to make this part of my working process</li>
+                  <li>
+                    Mac OSX / Windows 7
+                  </li>
+                  <li>
+                    NodeJS
+                  </li>
+                  <li>
+                    SublimeText 2
+                  </li>
+                  <li>
+                    Behat
+                  </li>
+                  <li>
+                    Visual Studio
+                  </li>
                 </ul>
-                ]]>
-            </detail>
-          </bio>
-          <bio>
-            <title>I'm interested in</title>
-            <detail>
-              <![CDATA[
-                <p>
-                  I'm interested in any contract role that involves development using .NET 3.5+ or heavy frontend development. I am happy to lead or be part of a team and
-                  I'm keen to be involved in all parts of a projects lifecycle.
-                </p>
-                <p>
-                  At this moment in time I am only interested in contract work, although at some point in 2013 I imagine that will change.
-                </p>
                 ]]>
             </detail>
           </bio>
@@ -99,6 +97,92 @@
        </mycv>
         <positions>
             <position>
+                <title>Personal projects</title> 
+                <companyName>Home</companyName>
+                <period>December 2012 - February 2013</period>
+                <story><![CDATA[<p>While I'm in Whistler for the season I've got a couple personal projects I'll be working on. They mostly involve PHP, Backbone and Behat for BDD.</p>
+                <p>While creating this project in PHP I've been using a lot of MVC design patterns to make my code as testable and de-coupled as possible. This also meant that I've learned a lot of the newer features available in PHP 5.4+ which has led me to think that PHP isn't as bad as I used to think.</p>]]></story>
+                <projects></projects>
+            </position>
+            <position>
+                <title>Web developer</title> 
+                <companyName>Avvio (contract)</companyName>
+                <period>September 2012 - November 2012</period>
+                <story><![CDATA[<p>Before I went away in August I was asked to come back to Avvio for September which quickly turned into October and November as the technical lead handed in his notice. During this period I helped fill the void that he left and worked on other projects in parallel.</p>]]></story>
+                <projects>
+                    <project>
+                        <title>Sky People</title>
+                        <description><![CDATA[<p>I can't actually say much about this project right now as it is still in development due to the client changing their mind on how the site would function. However I can say that it was a showcase site providing information and interaction to keep the user interested as they went through the site. The site was created with touch screen devices in mind so we could use the native features on the device to give the user the best experience possible. I can show this when meeting in person if interested.</p>]]></description>
+                        <skills>
+                            <skill area="Javascript" name="Backbone" />
+                            <skill area="Javascript" name="jQuery" />
+                            <skill area="Javascript" name="Require.js" />
+                            <skill area="Javascript" name="r.js" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="HTML5" />
+                        </skills>
+                    </project>
+                    <project>
+                        <title>Head of Digital Knowledge Share</title>
+                        <description><![CDATA[<p>During my last month with Avvio a new Head of Digital started to replace the old Technical Lead. I was heavily involved in getting him up to speed on processes as well as having many talks about the structure of development at Avvio and what could be done to improve it based on our shared experiences.</p>]]></description>
+                        <skills>
+                            <skill area="Personal" name="Communication" />
+                        </skills>
+                    </project>
+                </projects>
+            </position>
+            <position>
+                <title>Web developer</title> 
+                <companyName>deltatre (contract)</companyName>
+                <period>June 2012 - July 2012</period>
+                <story><![CDATA[<p>deltatre provide digital media, broadcast and back-end services to the sports media industry. Originally only booked for one month they asked me to stay on for more, however I could only stay until the end of July because I was away in August.</p>]]></story>
+                <projects>
+                    <project>
+                        <title>Channel 4's Paralympic Website</title>
+                        <description><![CDATA[<p>Channel 4's Paralympic website was already up, however a new design along with new features was already well under development. My main role was to help them ensure an ontime and smooth delivery. This entailed learning and using their in-house CMS which is specifically designed for sporting events. I wouldn't say that the role was technically challenging but I did have to learn a lot very quickly to get everything rolling. The sort of work I was doing was:</p>
+
+                            <ul>
+                                <li>Creating web pages and includes using XML and XSLT.</li>
+                                <li>Working with Channel 4's accessibility agency to ensure the site was accessible to at least AA standard, this also entailed using screenreaders such as JAWS for testing.</li>
+                                <li>Enhancing clunky features, an example would be the schedule which I managed to fixed the headers to make everything more visible while still being accessible.</li>
+                                <li>Ensuring the website HTML validated as much as possible, there were some scenarios that this was not possible due to accessibility features actually breaking full validation.</li>
+                                <li>Generally discussing usability issues with the team to see what we could do to make it a better experience for the user.</li>
+                            </ul>]]></description>
+                        <skills>
+                            <skill area=".NET" name="ASP.NET 2.0" />
+                            <skill area="XML" name="XML AND XSLT" />
+                            <skill area="Javascript" name="jQuery" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="HTML5" />
+                        </skills>
+                    </project>
+                </projects>
+            </position>
+            <position>
+                <title>Web developer</title> 
+                <companyName>Avvio (contract)</companyName>
+                <period>May 2012</period>
+                <story><![CDATA[<p>I was asked to come in and work closely with the technical lead to develop an interactive touch screen pod.</p>]]></story>
+                <projects>
+                    <project>
+                        <title>Getting behind the British Swimming team - British Gas</title>
+                        <description><![CDATA[<p>British Gas are the main sponsors of the GB Swimming team and wanted to spread the word internally about who the team is while trying to get them excited about their part in the Olympics. British Gas have touchscreen pods at most of their locations around UK, these were updated with three different swimming oriented games and information on the team. When a user completed the game they had the chance to enter for a prize draw afterwards. The system ran within Chrome Kiosk mode which meant we could use the latest HTML5 and Javascript features to create the best experience possible. The project itself only had two and a half weeks until deadline which we met with almost half a day spare.</p>
+                            <ul>
+                                <li>Swimming game: three.js was used to create a 3D-esq retro style game where users had to dodge randomly dropped obstacles that became more frequent as time moved on.</li>
+                                <li>Snap: three.js was used to create a simple snap game where the swimming team would be used on the cards that the users had to match.</li>
+                                <li>Create an avatar: Users could create their own swimming avatar by dragging different clothing and accessories onto the model. A screenshot was then taken of the user's avatar with Canvas and stored locally on the machine for later retrieval.</li>
+                                <li>About the team: Users could watch video on each of the four main swimming hopefuls in the GB team</li>
+                            </ul>]]></description>
+                        <skills>
+                            <skill area="Javascript" name="three.js" />
+                            <skill area="Javascript" name="jQuery" />
+                            <skill area="CSS" name="CSS" />
+                            <skill area="HTML" name="HTML5" />
+                        </skills>
+                    </project>
+                </projects>
+            </position>
+            <position>
                 <title>Web developer</title> 
                 <companyName>dreamm (contract)</companyName>
                 <period>December 2011 - April 2012</period>
@@ -110,10 +194,10 @@
 
                             <ul>
                                 <li>Reading and maintaining the specification document, ensuring that it describes all functionality required by the system.</li>
-                                <li>Discussing technologies to be used with the technical director at dreamm and creating the project using them</li>
+                                <li>Discussing technologies to be used with the technical director at dreamm and creating the project using them.</li>
                                 <li>Ensuring that all involved in the project were up to date with its current status and making sure that deadlines were going to be met.</li>
-                                <li>Liaising with other companies to ensure SSO integration with partner companies was successful</li>
-                                <li>Deliver the product to testing and complete all bug fixes</li>
+                                <li>Liaising with other companies to ensure SSO integration with partner companies was successful.</li>
+                                <li>Deliver the product to testing and complete all bug fixes.</li>
                             </ul>]]></description>
                         <skills>
                             <skill area=".NET" name="ASP.NET MVC3" />
@@ -169,11 +253,11 @@
                             to all staff of Sky as well as opening the possibility to enabling comments and likes to anyone that was able to view the content on either website.
                             The main tasks of the brief were:</p>
                             <ul>
-                                <li>Allow content to be published via the intranet CMS onto individual or all three sites. Including being able to only show to particular sub user groups in each site if necessary</li>
-                                <li>can handle sharing of images and videos that are used in the article</li>
-                                <li>should be resilliant enough to handle connection down time and continue as usual</li>
-                                <li>any comments or likes made from either site would be available on all others almost immediately</li>
-                                <li>the site was to be moved onto a new environment which included two load balanced web servers and a clustered SQL server</li>
+                                <li>Allow content to be published via the intranet CMS onto individual or all three sites. Including being able to only show to particular sub user groups in each site if necessary.</li>
+                                <li>Can handle sharing of images and videos that are used in the article.</li>
+                                <li>Should be resilliant enough to handle connection down time and continue as usual.</li>
+                                <li>Any comments or likes made from either site would be available on all others almost immediately.</li>
+                                <li>The site was to be moved onto a new environment which included two load balanced web servers and a clustered SQL server.</li>
                             </ul>
                             <p>I was involved in all meetings once the project was started, often going into Sky to speak with the clients, who I have always had a good relationship with
                                 due to working with them for 3 years previously. After the initial development and testing period I worked at Sky HQ to ensure that the code was functioning correctly and performing satisfactorily. This meant I worked with Sky's <abbr title="Corporate Applications Development">CADM</abbr> team and their performance testing team over a two week period until all were satisfied.</p>
@@ -634,7 +718,7 @@
         <interests>
             <interest>
                 <name>Sports and exercise</name>
-                <description><![CDATA[<p>I have an overall interest in keeping fit, generally through a variety of sports including running, squash and football.</p>]]></description>
+                <description><![CDATA[<p>I have an overall interest in keeping fit, generally through a variety of sports including running, squash and football. Snowboarding is another love of mine and I'm going to be forfilling a dream of living on the mountain for three months in Whistler this season (2012).</p>]]></description>
             </interest>
             <interest>
                 <name>Programming</name>
@@ -643,7 +727,7 @@
                 technology specific (Lucene.NET, ASP.NET MVC) or even design principles. That's not to mention the various blogs I get feeds
                 from, which these days has decreased due to the use of Twitter but is still a valuable resource for me. 
                 I also like to go to events like <a href="http://search.twitter.com/search?q=%23ddd">#ddd</a> 
-                or get-togethers like <a href="http://readinggeeknight.com">Reading Geek night</a>.</p>
+                or get-togethers like <a href="http://readinggeeknight.com">Reading Geek night</a>, <a href="http://asyncjs.com/">async</a> or <a href="http://brightonalt.net/">alt.net beers</a>.</p>
                 <p>I would like to start contributing to an open source project but so far this has been minimal. I'm hoping that the more
                     I use git and Github the more likely this will happen.</p>]]></description>
             </interest>
@@ -655,7 +739,6 @@
                 <ul>
                     <li>Node.js</li>
                     <li>NoSql, specifically RavenDB or MongoDB</li>
-                    <li>BDD, in .NET and Javascript</li>
                 </ul>
                 <p>I can see real value in using each of the above technologies in different situations, so I'd like to know about them
                 so I can judge when they are best suited.</p>

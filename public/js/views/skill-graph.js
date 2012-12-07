@@ -34,7 +34,8 @@ define(['backbone', 'underscore', 'text!templates/skills/skill-graph.html', 'lib
 										{ label: 'jQueryUI' },
 										{ label: 'Backbone' },
 										{ label: 'Underscore' },
-										{ label: 'AMD' }
+										{ label: 'Modular' },
+										{ label: 'RequireJs' }
 									]
 								}
 							]
@@ -45,7 +46,7 @@ define(['backbone', 'underscore', 'text!templates/skills/skill-graph.html', 'lib
 									label: '.NET', children: [
 										{ label: '2.0 - 4.0' },
 										{ label: 'NHibernate' },
-										{ label: 'MVC 2 - 3' },
+										{ label: 'MVC 2 - 4' },
 										{ label: 'Lucene.NET' },
 										{ label: 'protobuf-net' }
 									]
